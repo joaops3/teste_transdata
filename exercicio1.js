@@ -23,9 +23,8 @@ const returnMoneyQuantity = (value) => {
           //if the item is in the array, it will inscrease item quantity
           if (item.nota == availableMoney[index]) {
             return (item = { nota: item.nota, qtd: item.qtd++ });
-          } else {
+          } 
             return item;
-          }
         });
       }
     } else {
@@ -35,5 +34,5 @@ const returnMoneyQuantity = (value) => {
   return finalList;
 };
 
-const teste = returnMoneyQuantity(73);
+const teste = returnMoneyQuantity(75);
 console.log(teste);
